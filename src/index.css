@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-prisma-brown: #5E2C2F;
+  --color-prisma-orange: #FF4B2B;
+  --color-prisma-bg: #F8F8F8;
+  --color-prisma-dark: #222222;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-prisma-dark bg-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap');
